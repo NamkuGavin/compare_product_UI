@@ -35,79 +35,87 @@ class _CompareProductUIState extends State<CompareProductUI> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          ProductHeaderUI(
-            colorBorder: SharedCode.colorBox1Border,
-            color: SharedCode.colorBox1,
-            text: 'Obligasi Negara Th. 2006 Seri FR0037',
-            row: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
-                CategoryTypeWidget(
-                    text: "Bond", color: SharedCode.colorCategory1),
-              ],
-            ),
-            textButton: 'Change Bond',
+          Column(
+            children: [
+              Container(
+                width: 250,
+                child: ProductHeaderUI(
+                  colorBorder: SharedCode.colorBox1Border,
+                  color: SharedCode.colorBox1,
+                  text: 'Obligasi Negara Th. 2006 Seri FR0037',
+                  row: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: const [
+                      CategoryTypeWidget(
+                          text: "Bond", color: SharedCode.colorCategory1),
+                    ],
+                  ),
+                  textButton: 'Change Bond',
+                ),
+              ),
+
+            ],
           ),
-          ProductHeaderUI(
-            colorBorder: SharedCode.colorBox2Border,
-            color: SharedCode.colorBox2,
-            text: 'Ashmore Dana Obligasi Nusantara',
-            row: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
-                CategoryTypeWidget(
-                    text: "Fixed Income", color: SharedCode.colorCategory1),
-                CategoryTypeWidget(
-                    text: "ESG", color: SharedCode.colorCategory2),
-                CategoryTypeWidget(
-                    text: "SHA", color: SharedCode.colorCategory3),
-              ],
-            ),
-            textButton: 'Change Mutual Fund Product',
-          ),
-          ProductHeaderUI(
-            colorBorder: SharedCode.colorBox3Border,
-            color: SharedCode.colorBox3,
-            text: 'Ashmore Dana Progressif Nusantara',
-            row: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
-                CategoryTypeWidget(
-                    text: "Fixed Income", color: SharedCode.colorCategory1),
-                CategoryTypeWidget(
-                    text: "ESG", color: SharedCode.colorCategory2),
-                CategoryTypeWidget(
-                    text: "SHA", color: SharedCode.colorCategory3),
-              ],
-            ),
-            textButton: 'Change Mutual Fund Product',
-          ),
-          ProductHeaderUI(
-            colorBorder: SharedCode.colorBox4Border,
-            color: SharedCode.colorBox4,
-            text: 'IDR Money Market Fund',
-            row: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
-                CategoryTypeWidget(
-                    text: "Money Market", color: SharedCode.colorCategory1),
-              ],
-            ),
-            textButton: 'Change Unit Link',
-          ),
-          ProductHeaderUI(
-            colorBorder: SharedCode.colorBox5Border,
-            color: SharedCode.colorBox5,
-            text: 'IDX Small-Mid Cap Composite',
-            row: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
-                CategoryTypeWidget(
-                    text: "Benchmark", color: SharedCode.colorCategory1),
-              ],
-            ),
-            textButton: 'Change Benchmark',
-          ),
+          // ProductHeaderUI(
+          //   colorBorder: SharedCode.colorBox2Border,
+          //   color: SharedCode.colorBox2,
+          //   text: 'Ashmore Dana Obligasi Nusantara',
+          //   row: Row(
+          //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+          //     children: const [
+          //       CategoryTypeWidget(
+          //           text: "Fixed Income", color: SharedCode.colorCategory1),
+          //       CategoryTypeWidget(
+          //           text: "ESG", color: SharedCode.colorCategory2),
+          //       CategoryTypeWidget(
+          //           text: "SHA", color: SharedCode.colorCategory3),
+          //     ],
+          //   ),
+          //   textButton: 'Change Mutual Fund Product',
+          // ),
+          // ProductHeaderUI(
+          //   colorBorder: SharedCode.colorBox3Border,
+          //   color: SharedCode.colorBox3,
+          //   text: 'Ashmore Dana Progressif Nusantara',
+          //   row: Row(
+          //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+          //     children: const [
+          //       CategoryTypeWidget(
+          //           text: "Fixed Income", color: SharedCode.colorCategory1),
+          //       CategoryTypeWidget(
+          //           text: "ESG", color: SharedCode.colorCategory2),
+          //       CategoryTypeWidget(
+          //           text: "SHA", color: SharedCode.colorCategory3),
+          //     ],
+          //   ),
+          //   textButton: 'Change Mutual Fund Product',
+          // ),
+          // ProductHeaderUI(
+          //   colorBorder: SharedCode.colorBox4Border,
+          //   color: SharedCode.colorBox4,
+          //   text: 'IDR Money Market Fund',
+          //   row: Row(
+          //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+          //     children: const [
+          //       CategoryTypeWidget(
+          //           text: "Money Market", color: SharedCode.colorCategory1),
+          //     ],
+          //   ),
+          //   textButton: 'Change Unit Link',
+          // ),
+          // ProductHeaderUI(
+          //   colorBorder: SharedCode.colorBox5Border,
+          //   color: SharedCode.colorBox5,
+          //   text: 'IDX Small-Mid Cap Composite',
+          //   row: Row(
+          //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+          //     children: const [
+          //       CategoryTypeWidget(
+          //           text: "Benchmark", color: SharedCode.colorCategory1),
+          //     ],
+          //   ),
+          //   textButton: 'Change Benchmark',
+          // ),
         ],
       ),
     );
