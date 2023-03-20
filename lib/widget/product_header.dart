@@ -44,12 +44,11 @@ class ProductHeaderUI extends StatelessWidget {
                     radius: 35,
                   ),
                 ),
-                SizedBox(
-                    child: Expanded(
-                        child: Text(
+                Expanded(
+                    child: Text(
                   text,
                   textAlign: TextAlign.center,
-                ))),
+                )),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8),
                   child: row,
