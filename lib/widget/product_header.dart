@@ -19,60 +19,58 @@ class ProductHeaderUI extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12),
-        child: Container(
-          height: 215,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(4),
-            color: color,
-            border: Border.all(
-              color: colorBorder,
-            ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12),
+      child: Container(
+        height: 215,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(4),
+          color: color,
+          border: Border.all(
+            color: colorBorder,
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Padding(
-                  padding: EdgeInsets.only(bottom: 10),
-                  child: CircleAvatar(
-                    backgroundColor: Color(0xFFD9D9D9),
-                    radius: 35,
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Padding(
+                padding: EdgeInsets.only(bottom: 10),
+                child: CircleAvatar(
+                  backgroundColor: Color(0xFFD9D9D9),
+                  radius: 35,
+                ),
+              ),
+              Expanded(
+                  child: Text(
+                text,
+                textAlign: TextAlign.center,
+              )),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: row,
+              ),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(double.infinity, 0),
+                    padding: const EdgeInsets.symmetric(vertical: 6),
+                    side: const BorderSide(
+                        width: 1, color: SharedCode.primaryColor),
+                    backgroundColor: Colors.white,
+                    foregroundColor: SharedCode.primaryColor,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(2)),
                   ),
-                ),
-                Expanded(
-                    child: Text(
-                  text,
-                  textAlign: TextAlign.center,
-                )),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8),
-                  child: row,
-                ),
-                ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      minimumSize: const Size(double.infinity, 0),
-                      padding: const EdgeInsets.symmetric(vertical: 6),
-                      side: const BorderSide(
-                          width: 1, color: SharedCode.primaryColor),
-                      backgroundColor: Colors.white,
-                      foregroundColor: SharedCode.primaryColor,
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(2)),
-                    ),
-                    onPressed: () {},
-                    child: Text(
-                      textButton,
-                      style: GoogleFonts.inter(
-                          fontWeight: FontWeight.w400, fontSize: 10),
-                      textAlign: TextAlign.center,
-                    ))
-              ],
-            ),
+                  onPressed: () {},
+                  child: Text(
+                    textButton,
+                    style: GoogleFonts.inter(
+                        fontWeight: FontWeight.w400, fontSize: 10),
+                    textAlign: TextAlign.center,
+                  ))
+            ],
           ),
         ),
       ),
